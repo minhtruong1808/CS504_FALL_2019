@@ -1,13 +1,8 @@
 # Python program to check if the input number is prime or not
 # if it is not, show all factors
-import sys
-sys.setrecursionlimit(1000)
+
 # take input from the user
 num = int(input("Enter a number: "))
-#define the remainder 
-remainder = num
-
- 
 
 #create list to store factors
 factors = []
