@@ -11,15 +11,14 @@ is_prime = True
 
 #use recurison to find factor of num
 def find_factor(number,factors):
-   for i in range(2,number):
+   for i in range(2,number+1):
       if (number % i == 0) :
          number = number//i
          factors.append(i)
          break
-   if number > 3:
+   if number != 1:
       find_factor(number,factors)
-   else:
-      factors.append(number)    
+     
 
 # prime numbers are greater than 1
 if num > 1:
